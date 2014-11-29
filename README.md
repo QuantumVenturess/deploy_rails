@@ -36,3 +36,6 @@ $ docker run -p 80:80 [tag_name]
 $ docker build -t repo/name github.com/username/repo
 $ docker run -p 80:80 repo/name
 ```
+
+# Run container as a daemon
+`$ docker run -d -p 80:80 [name]`
