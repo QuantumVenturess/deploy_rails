@@ -24,6 +24,15 @@ $ docker kill <container_id>
 # Using Dockerfile
 A configuration file for Docker, which specifies how to create your customized
 container from a base image. Create a Dockerfil in root directory
+```
 $ # Build an image using the Dockerfile at current location
 $ # Example: sudo docker build -t [name] .
 $ sudo docker build -t my_mongodb .    
+$ docker run -p 80:80 [tag_name]
+```
+
+# Upload to repository
+```
+$ docker build -t repo/name github.com/username/repo
+$ docker run -p 80:80 repo/name
+```
